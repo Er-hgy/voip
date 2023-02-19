@@ -14,6 +14,7 @@
 		262ABCEE29910470000DA9F7 /* VOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCED29910470000DA9F7 /* VOIPTests.swift */; };
 		262ABCF829910470000DA9F7 /* VOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF729910470000DA9F7 /* VOIPUITests.swift */; };
 		262ABCFA29910470000DA9F7 /* VOIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */; };
+		269C5C2029A20C08004F755F /* helloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C5C1F29A20C08004F755F /* helloView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		262ABCF329910470000DA9F7 /* VOIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262ABCF729910470000DA9F7 /* VOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITests.swift; sourceTree = "<group>"; };
 		262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		269C5C1F29A20C08004F755F /* helloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
+				269C5C1F29A20C08004F755F /* helloView.swift */,
 			);
 			path = VOIP;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
+				269C5C2029A20C08004F755F /* helloView.swift in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
