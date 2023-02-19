@@ -1,14 +1,14 @@
 //
-//  VOIPApp.swift
-//  VOIP
+//  VoipApp.swift
+//  Voip
 //
-//  Created by 侯冠宇 on 2023/2/6.
+//  Created by Lube on 2023/2/19.
 //
 
 import SwiftUI
 
 @main
-struct VOIPApp: App {
+struct VoipApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

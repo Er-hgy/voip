@@ -1,13 +1,13 @@
 //
-//  VOIPUITests.swift
-//  VOIPUITests
+//  VoipUITests.swift
+//  VoipUITests
 //
-//  Created by 侯冠宇 on 2023/2/6.
+//  Created by Lube on 2023/2/19.
 //
 
 import XCTest
 
-final class VOIPUITests: XCTestCase {
+final class VoipUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

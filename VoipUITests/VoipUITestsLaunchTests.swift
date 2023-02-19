@@ -1,13 +1,13 @@
 //
-//  VOIPUITestsLaunchTests.swift
-//  VOIPUITests
+//  VoipUITestsLaunchTests.swift
+//  VoipUITests
 //
-//  Created by 侯冠宇 on 2023/2/6.
+//  Created by Lube on 2023/2/19.
 //
 
 import XCTest
 
-final class VOIPUITestsLaunchTests: XCTestCase {
+final class VoipUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

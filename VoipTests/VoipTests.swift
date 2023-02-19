@@ -1,14 +1,14 @@
 //
-//  VOIPTests.swift
-//  VOIPTests
+//  VoipTests.swift
+//  VoipTests
 //
-//  Created by 侯冠宇 on 2023/2/6.
+//  Created by Lube on 2023/2/19.
 //
 
 import XCTest
-@testable import VOIP
+@testable import Voip
 
-final class VOIPTests: XCTestCase {
+final class VoipTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
