@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCDC2991046D000DA9F7 /* VOIPApp.swift */; };
-		262ABCDF2991046D000DA9F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCDE2991046D000DA9F7 /* ContentView.swift */; };
+		262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCDE2991046D000DA9F7 /* WelcomeView.swift */; };
 		262ABCE12991046F000DA9F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262ABCE02991046F000DA9F7 /* Assets.xcassets */; };
 		262ABCE42991046F000DA9F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262ABCE32991046F000DA9F7 /* Preview Assets.xcassets */; };
 		262ABCEE29910470000DA9F7 /* VOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCED29910470000DA9F7 /* VOIPTests.swift */; };
@@ -37,7 +37,7 @@
 		261ABA0A29927A9500EBC972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		262ABCD92991046D000DA9F7 /* VOIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		262ABCDC2991046D000DA9F7 /* VOIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPApp.swift; sourceTree = "<group>"; };
-		262ABCDE2991046D000DA9F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		262ABCDE2991046D000DA9F7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		262ABCE02991046F000DA9F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		262ABCE32991046F000DA9F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		262ABCE929910470000DA9F7 /* VOIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,7 @@
 			children = (
 				261ABA0A29927A9500EBC972 /* Info.plist */,
 				262ABCDC2991046D000DA9F7 /* VOIPApp.swift */,
-				262ABCDE2991046D000DA9F7 /* ContentView.swift */,
+				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
 			);
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262ABCDF2991046D000DA9F7 /* ContentView.swift in Sources */,
+				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
