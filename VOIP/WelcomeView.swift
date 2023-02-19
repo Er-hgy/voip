@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    // 创建ObjectiveCDemoClass实例
+    let objectiveCDemo = ObjectiveCDemoClass()
+    
+    
     var body: some View {
         
 /*
@@ -45,32 +50,65 @@ struct WelcomeView: View {
         
         
         
+
+        
+//        VStack {
+//            Image("Tel-logo")
+//                .padding([.top, .leading])
+//                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment:.center)
+//
+//            Spacer() // 添加一个Spacer以使下面的ZStack保持在底部
+//
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 40)
+//                    .fill(Color(red: 0.22, green: 0.22, blue: 0.22))
+//                    .frame(width: 0.7 * UIScreen.main.bounds.width, height: 54) // 使用UIScreen.main.bounds.width计算宽度，让其在不同设备上自适应
+//                Text("创建账户")
+//                    .font(.largeTitle)
+//                    .foregroundColor(Color.white)
+//                    .multilineTextAlignment(.center)
+//            }
+//            .padding(.bottom, 150) // 添加底部间距
+//        }
+//        .background(Color("WelcomeColor"))
+//        .edgesIgnoringSafeArea(.all)
+//
+
+        
+        
+
         VStack {
             Image("Tel-logo")
                 .padding([.top, .leading])
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment:.center)
+
             
             Spacer() // 添加一个Spacer以使下面的ZStack保持在底部
+
             
-            ZStack {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(Color(red: 0.22, green: 0.22, blue: 0.22))
-                    .frame(width: 0.7 * UIScreen.main.bounds.width, height: 54) // 使用UIScreen.main.bounds.width计算宽度，让其在不同设备上自适应
-                Text("创建账户")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
+            Button(action: {
+                // 调用Objective-C方法
+                objectiveCDemo.printMessage()
+            }) {
+                
+                ZStack{
+                    
+                    RoundedRectangle(cornerRadius: 40)
+                        .fill(Color(red: 0.22, green: 0.22, blue: 0.22))
+                        .frame(width: 0.7 * UIScreen.main.bounds.width, height: 54) // 使用UIScreen.main.bounds.width计算宽度，让其在不同设备上自适应
+                    Text("创建账户")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                    
+                }
             }
             .padding(.bottom, 150) // 添加底部间距
+            
+            
         }
         .background(Color("WelcomeColor"))
         .edgesIgnoringSafeArea(.all)
-        
-        
-        
-        //测试修改
-        
-        
     }
 }
 

@@ -14,7 +14,7 @@
 		262ABCEE29910470000DA9F7 /* VOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCED29910470000DA9F7 /* VOIPTests.swift */; };
 		262ABCF829910470000DA9F7 /* VOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF729910470000DA9F7 /* VOIPUITests.swift */; };
 		262ABCFA29910470000DA9F7 /* VOIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */; };
-		269C5C2029A20C08004F755F /* helloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C5C1F29A20C08004F755F /* helloView.swift */; };
+		269C5C2429A21F14004F755F /* ObjectiveCDemoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,9 @@
 		262ABCF329910470000DA9F7 /* VOIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262ABCF729910470000DA9F7 /* VOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITests.swift; sourceTree = "<group>"; };
 		262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		269C5C1F29A20C08004F755F /* helloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloView.swift; sourceTree = "<group>"; };
+		269C5C2129A21F14004F755F /* VOIP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VOIP-Bridging-Header.h"; sourceTree = "<group>"; };
+		269C5C2229A21F14004F755F /* ObjectiveCDemoClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCDemoClass.h; sourceTree = "<group>"; };
+		269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCDemoClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,9 @@
 				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
-				269C5C1F29A20C08004F755F /* helloView.swift */,
+				269C5C2229A21F14004F755F /* ObjectiveCDemoClass.h */,
+				269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */,
+				269C5C2129A21F14004F755F /* VOIP-Bridging-Header.h */,
 			);
 			path = VOIP;
 			sourceTree = "<group>";
@@ -200,6 +204,7 @@
 				TargetAttributes = {
 					262ABCD82991046D000DA9F7 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					262ABCE829910470000DA9F7 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -263,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
-				269C5C2029A20C08004F755F /* helloView.swift in Sources */,
+				269C5C2429A21F14004F755F /* ObjectiveCDemoClass.m in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VOIP/Preview Content\"";
@@ -439,6 +445,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HGY.VOIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VOIP/VOIP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VOIP/Preview Content\"";
@@ -468,6 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HGY.VOIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VOIP/VOIP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
