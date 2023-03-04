@@ -9,11 +9,17 @@
 
 1.4 点击“Repositories”按钮，展开菜单栏，右键“Remotes”然后选择“Add Existing Remote...”。
 
+![截屏2023-03-04 16 08 05](https://user-images.githubusercontent.com/74401896/222885576-03ce1669-aefb-4c6b-8e35-3a3be2408155.png)
+
 1.5 输入你的 GitHub 仓库地址，并选择“Add”。
 
 1.6 在电脑最顶部菜单栏上选“Source Control”，点击“Fetch Changes”，就可以自动同步。
 
+![截屏2023-03-04 16 09 04](https://user-images.githubusercontent.com/74401896/222885601-01061c9b-aa1f-4fff-a762-b7bb0f4136c2.png)
+
 1.7 切换到你所在的分支进行开发。
+
+![截屏2023-03-04 16 09 25](https://user-images.githubusercontent.com/74401896/222885635-25f5f87c-3b95-4904-9166-0001b55d2c19.png)
 
 步骤 2：创建新的分支
 
