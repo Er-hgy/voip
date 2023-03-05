@@ -43,7 +43,7 @@ struct BottomSheetContentView: View {
                         .underlineTextField()
                         .padding(.horizontal,24)
             }
-            .padding(.bottom,74)
+            .padding(.bottom,94)
             
             Button {
                 //action
@@ -51,9 +51,9 @@ struct BottomSheetContentView: View {
                 Text("下一步")
                     .font(.largeTitle)
                     .foregroundColor(.white)
-                    .frame(width: 130, height: 50)
-                    .padding(.vertical,5)
-                    .padding(.horizontal, 25)
+                    .frame(width: 0.4 * UIScreen.main.bounds.width, height: 60)
+//                    .padding(.vertical,5)
+//                    .padding(.horizontal, 25)
             }
             .background(Color(red: 0.22, green: 0.22, blue: 0.22))
             .cornerRadius(50)
