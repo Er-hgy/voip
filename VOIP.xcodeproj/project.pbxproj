@@ -14,6 +14,10 @@
 		262ABCEE29910470000DA9F7 /* VOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCED29910470000DA9F7 /* VOIPTests.swift */; };
 		262ABCF829910470000DA9F7 /* VOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF729910470000DA9F7 /* VOIPUITests.swift */; };
 		262ABCFA29910470000DA9F7 /* VOIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */; };
+		267D04C329B4801400DD1CE3 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D04C229B4801400DD1CE3 /* BottomSheetContentView.swift */; };
+		267D04C729B48F4900DD1CE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D04C629B48F4900DD1CE3 /* Extensions.swift */; };
+		267D04C929B499C100DD1CE3 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D04C829B499C100DD1CE3 /* BottomSheetView.swift */; };
+		267D04CB29B49DA500DD1CE3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D04CA29B49DA500DD1CE3 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		262ABCF329910470000DA9F7 /* VOIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262ABCF729910470000DA9F7 /* VOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITests.swift; sourceTree = "<group>"; };
 		262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		267D04C229B4801400DD1CE3 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
+		267D04C629B48F4900DD1CE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		267D04C829B499C100DD1CE3 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		267D04CA29B49DA500DD1CE3 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,14 @@
 		262ABCDB2991046D000DA9F7 /* VOIP */ = {
 			isa = PBXGroup;
 			children = (
+				267D04CA29B49DA500DD1CE3 /* RegisterView.swift */,
+				267D04C129B47FD500DD1CE3 /* Components */,
 				261ABA0A29927A9500EBC972 /* Info.plist */,
 				262ABCDC2991046D000DA9F7 /* VOIPApp.swift */,
 				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
+				267D04C629B48F4900DD1CE3 /* Extensions.swift */,
 			);
 			path = VOIP;
 			sourceTree = "<group>";
@@ -127,6 +138,15 @@
 				262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */,
 			);
 			path = VOIPUITests;
+			sourceTree = "<group>";
+		};
+		267D04C129B47FD500DD1CE3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				267D04C229B4801400DD1CE3 /* BottomSheetContentView.swift */,
+				267D04C829B499C100DD1CE3 /* BottomSheetView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +217,7 @@
 				TargetAttributes = {
 					262ABCD82991046D000DA9F7 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					262ABCE829910470000DA9F7 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -260,7 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
+				267D04C729B48F4900DD1CE3 /* Extensions.swift in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
+				267D04CB29B49DA500DD1CE3 /* RegisterView.swift in Sources */,
+				267D04C329B4801400DD1CE3 /* BottomSheetContentView.swift in Sources */,
+				267D04C929B499C100DD1CE3 /* BottomSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VOIP/Preview Content\"";
@@ -435,6 +461,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HGY.VOIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VOIP/VOIP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VOIP/Preview Content\"";
@@ -464,6 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HGY.VOIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VOIP/VOIP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
