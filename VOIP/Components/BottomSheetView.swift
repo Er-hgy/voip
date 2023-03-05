@@ -9,10 +9,6 @@ import SwiftUI
 
 struct BottomSheetView: View {
     
-    @Binding var isPresented: Bool
-    @State private var username = ""
-    @State private var password = ""
-    
     var body: some View {
         GeometryReader{ geometry in
             NavigationView {
