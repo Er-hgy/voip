@@ -18,6 +18,8 @@
 		8F0B1EDF29A21340003E9DA4 /* ContactUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EDE29A21340003E9DA4 /* ContactUIView.swift */; };
 		8F0B1EE129A2134E003E9DA4 /* DialUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EE029A2134E003E9DA4 /* DialUIView.swift */; };
 		8F0B1EE329A213A2003E9DA4 /* SettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */; };
+		8F0B1EE729A23540003E9DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EE629A23540003E9DA4 /* ContentView.swift */; };
+		8F0B1F2929B35A7B003E9DA4 /* RecentCallContactUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8F0B1EDE29A21340003E9DA4 /* ContactUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUIView.swift; sourceTree = "<group>"; };
 		8F0B1EE029A2134E003E9DA4 /* DialUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialUIView.swift; sourceTree = "<group>"; };
 		8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUIView.swift; sourceTree = "<group>"; };
+		8F0B1EE629A23540003E9DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallContactUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				261ABA0A29927A9500EBC972 /* Info.plist */,
 				262ABCDC2991046D000DA9F7 /* VOIPApp.swift */,
+				8F0B1EE629A23540003E9DA4 /* ContentView.swift */,
 				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
@@ -112,6 +117,7 @@
 				8F0B1EDE29A21340003E9DA4 /* ContactUIView.swift */,
 				8F0B1EE029A2134E003E9DA4 /* DialUIView.swift */,
 				8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */,
+				8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */,
 			);
 			path = VOIP;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
 				8F0B1EE129A2134E003E9DA4 /* DialUIView.swift in Sources */,
+				8F0B1F2929B35A7B003E9DA4 /* RecentCallContactUIView.swift in Sources */,
+				8F0B1EE729A23540003E9DA4 /* ContentView.swift in Sources */,
 				8F0B1EDD29A2132C003E9DA4 /* HistoryUIView.swift in Sources */,
 				8F0B1EE329A213A2003E9DA4 /* SettingsUIView.swift in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,

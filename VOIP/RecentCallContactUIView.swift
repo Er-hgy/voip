@@ -1,20 +1,20 @@
 //
-//  ContactUIView.swift
+//  RecentCallContactUIView.swift
 //  VOIP
 //
-//  Created by Lube on 2023/2/19.
+//  Created by Lube on 2023/3/4.
 //
 
 import SwiftUI
 
-struct ContactUIView: View {
+struct RecentCallContactUIView: View {
     var body: some View {
         GeometryReader{geo in
             VStack(spacing: 22.59) {
                 HStack(spacing:190) {
                     HStack(spacing:10){
                         Image("LVector")
-                        Text("通讯录")
+                        Text("最近通话")
                         .fontWeight(.medium)
                         .font(.title3)
                         .frame(width: 85, alignment: .topLeading)
@@ -47,9 +47,37 @@ struct ContactUIView: View {
                         .foregroundColor(Color.white)
                         .frame(width: 25.0, height: 25.0)
                 }
-                
+                ZStack (){
+                    Text("15:16")
+                    .fontWeight(.medium)
+                    .font(.caption)
+                    .offset(x: -131, y: 3.50)
+
+                    Text("去电")
+                    .fontWeight(.medium)
+                    .font(.caption)
+                    .offset(x: -96.50, y: 3.50)
+
+                    Text("2分20秒")
+                    .foregroundColor(.gray)
+                    .fontWeight(.medium)
+                    .font(.caption)
+                    .offset(x: -86, y: 23.50)
+
+                    Text("2023年1月26日")
+                    .fontWeight(.medium)
+                    .font(.subheadline)
+                    .tracking(1)
+                    .offset(x: -87, y: -18.50)
+                }
+                .frame(width: geo.size.width - 30, height: 84)
+                .background(Color.white)
+                .cornerRadius(10)
+                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.02), radius: 10)
+                .frame(width: geo.size.width - 30, height: 84)
 
                 VStack(alignment: .leading, spacing: 3) {
+                    
                     Text("手机")
                     .fontWeight(.medium)
                     .font(.subheadline)
@@ -93,11 +121,12 @@ struct ContactUIView: View {
             .frame(width: geo.size.width, height: geo.size.height)
             .background(Color(red: 0.97, green: 0.97, blue: 0.97))
         }
+
     }
 }
 
-struct ContactUIView_Previews: PreviewProvider {
+struct RecentCallContactUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactUIView()
+        RecentCallContactUIView()
     }
 }

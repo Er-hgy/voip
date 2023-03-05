@@ -75,8 +75,9 @@ struct WelcomeView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
+struct Welcome_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
     }
 }
+

@@ -11,7 +11,7 @@ import SwiftUI
 struct VOIPApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            ContentView()
         }
     }
 }
