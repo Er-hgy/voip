@@ -15,7 +15,6 @@
 		262ABCF829910470000DA9F7 /* VOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF729910470000DA9F7 /* VOIPUITests.swift */; };
 		262ABCFA29910470000DA9F7 /* VOIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */; };
 		269B26C529AB28B0006B0EF7 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B26C429AB28B0006B0EF7 /* BottomSheetView.swift */; };
-		269C5C2429A21F14004F755F /* ObjectiveCDemoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +47,6 @@
 		262ABCF729910470000DA9F7 /* VOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITests.swift; sourceTree = "<group>"; };
 		262ABCF929910470000DA9F7 /* VOIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		269B26C429AB28B0006B0EF7 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
-		269C5C2129A21F14004F755F /* VOIP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VOIP-Bridging-Header.h"; sourceTree = "<group>"; };
-		269C5C2229A21F14004F755F /* ObjectiveCDemoClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCDemoClass.h; sourceTree = "<group>"; };
-		269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCDemoClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +102,6 @@
 				262ABCDE2991046D000DA9F7 /* WelcomeView.swift */,
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
-				269C5C2229A21F14004F755F /* ObjectiveCDemoClass.h */,
-				269C5C2329A21F14004F755F /* ObjectiveCDemoClass.m */,
-				269C5C2129A21F14004F755F /* VOIP-Bridging-Header.h */,
 				269B26C429AB28B0006B0EF7 /* BottomSheetView.swift */,
 			);
 			path = VOIP;
@@ -272,7 +265,6 @@
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
 				269B26C529AB28B0006B0EF7 /* BottomSheetView.swift in Sources */,
-				269C5C2429A21F14004F755F /* ObjectiveCDemoClass.m in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
