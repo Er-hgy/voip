@@ -16,7 +16,8 @@ struct ContentView: View {
             ContactUIView().tabItem{
                 Image(systemName: "person.fill")
             }
-            DialUIView().tabItem{
+            
+            DialPadView().tabItem{
                 Image(systemName: "circle.grid.3x3.fill")
             }
             SettingsUIView().tabItem{

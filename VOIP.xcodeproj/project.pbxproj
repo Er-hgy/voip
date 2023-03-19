@@ -20,6 +20,11 @@
 		8F0B1EE329A213A2003E9DA4 /* SettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */; };
 		8F0B1EE729A23540003E9DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1EE629A23540003E9DA4 /* ContentView.swift */; };
 		8F0B1F2929B35A7B003E9DA4 /* RecentCallContactUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */; };
+		8FC06AB929C7050D009B1D60 /* NewContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC06AB829C7050D009B1D60 /* NewContact.swift */; };
+		8FC06ABB29C70CD4009B1D60 /* cs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC06ABA29C70CD4009B1D60 /* cs.swift */; };
+		8FD1F96629BC58C500EFE22E /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD1F96529BC58C500EFE22E /* SettingRow.swift */; };
+		8FD1F96A29BC5E3300EFE22E /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD1F96929BC5E3300EFE22E /* ContactRow.swift */; };
+		8FD1F96C29BC818F00EFE22E /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD1F96B29BC818F00EFE22E /* ContactsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUIView.swift; sourceTree = "<group>"; };
 		8F0B1EE629A23540003E9DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallContactUIView.swift; sourceTree = "<group>"; };
+		8FC06AB829C7050D009B1D60 /* NewContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContact.swift; sourceTree = "<group>"; };
+		8FC06ABA29C70CD4009B1D60 /* cs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cs.swift; sourceTree = "<group>"; };
+		8FD1F96529BC58C500EFE22E /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
+		8FD1F96929BC5E3300EFE22E /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		8FD1F96B29BC818F00EFE22E /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +124,15 @@
 				262ABCE02991046F000DA9F7 /* Assets.xcassets */,
 				262ABCE22991046F000DA9F7 /* Preview Content */,
 				8F0B1EDC29A2132C003E9DA4 /* HistoryUIView.swift */,
+				8FD1F96529BC58C500EFE22E /* SettingRow.swift */,
 				8F0B1EDE29A21340003E9DA4 /* ContactUIView.swift */,
+				8FD1F96929BC5E3300EFE22E /* ContactRow.swift */,
 				8F0B1EE029A2134E003E9DA4 /* DialUIView.swift */,
 				8F0B1EE229A213A2003E9DA4 /* SettingsUIView.swift */,
 				8F0B1F2829B35A7B003E9DA4 /* RecentCallContactUIView.swift */,
+				8FD1F96B29BC818F00EFE22E /* ContactsRow.swift */,
+				8FC06AB829C7050D009B1D60 /* NewContact.swift */,
+				8FC06ABA29C70CD4009B1D60 /* cs.swift */,
 			);
 			path = VOIP;
 			sourceTree = "<group>";
@@ -278,13 +293,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				262ABCDF2991046D000DA9F7 /* WelcomeView.swift in Sources */,
+				8FD1F96A29BC5E3300EFE22E /* ContactRow.swift in Sources */,
 				8F0B1EE129A2134E003E9DA4 /* DialUIView.swift in Sources */,
 				8F0B1F2929B35A7B003E9DA4 /* RecentCallContactUIView.swift in Sources */,
 				8F0B1EE729A23540003E9DA4 /* ContentView.swift in Sources */,
 				8F0B1EDD29A2132C003E9DA4 /* HistoryUIView.swift in Sources */,
+				8FC06ABB29C70CD4009B1D60 /* cs.swift in Sources */,
 				8F0B1EE329A213A2003E9DA4 /* SettingsUIView.swift in Sources */,
 				262ABCDD2991046D000DA9F7 /* VOIPApp.swift in Sources */,
 				8F0B1EDF29A21340003E9DA4 /* ContactUIView.swift in Sources */,
+				8FC06AB929C7050D009B1D60 /* NewContact.swift in Sources */,
+				8FD1F96629BC58C500EFE22E /* SettingRow.swift in Sources */,
+				8FD1F96C29BC818F00EFE22E /* ContactsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

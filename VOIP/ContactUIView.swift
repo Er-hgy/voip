@@ -28,14 +28,14 @@ struct ContactUIView: View {
                     Image(systemName: "person.circle.fill")
                         .resizable(resizingMode: .stretch)
                         .foregroundColor(Color.gray)
-                        .frame(width: 95.0, height: 95.0)
+                        .frame(width: 95.0, height: 90)
                 }
-                .frame(width: 96, height: 94.03)
+                .frame(width: 96)
 
                 Text("蔡文耀")
                 .font(.title)
                 .multilineTextAlignment(.center)
-                .frame(width: 96, height: 34, alignment: .top)
+                .frame(width: 96, height: 34)
 
                 ZStack{
                     RoundedRectangle(cornerRadius: 8)
@@ -47,50 +47,15 @@ struct ContactUIView: View {
                         .foregroundColor(Color.white)
                         .frame(width: 25.0, height: 25.0)
                 }
-                
-
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("手机")
-                    .fontWeight(.medium)
-                    .font(.subheadline)
-
-                    Text("15025241437")
-                    .fontWeight(.medium)
-                    .font(.subheadline)
+                ScrollView{
+                    VStack( spacing: 65) {
+                        ContactRow(tittle: "手机",subtittle: "15025241437")
+                        ContactRow(tittle: "SIP",subtittle: "15025241437@sip.xxx.com")
+                    }
                 }
-                .padding(.leading, 23)
-                .padding(.trailing, 221)
-                .padding(.top, 13)
-                .padding(.bottom, 11)
-                .frame(width: geo.size.width - 30, height: 69)
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.02), radius: 10)
-                .frame(width: geo.size.width - 30, height: 69)
-
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("SIP")
-                    .fontWeight(.medium)
-                    .font(.subheadline)
-
-                    Text("15025241437@sip.xxx.com")
-                    .fontWeight(.medium)
-                    .font(.subheadline)
-                }
-                .padding(.leading, 23)
-                .padding(.trailing, 126)
-                .padding(.top, 13)
-                .padding(.bottom, 11)
-                .frame(width: geo.size.width - 30, height: 69)
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.02), radius: 10)
-                .frame(width: geo.size.width - 30, height: 69)
+                .frame(width: geo.size.width-30)
             }
-            .padding(.horizontal, 20)
-            .padding(.top, 63)
-            .padding(.bottom, 300)
-            .frame(width: geo.size.width, height: geo.size.height)
+            .frame(width: geo.size.width)
             .background(Color(red: 0.97, green: 0.97, blue: 0.97))
         }
     }

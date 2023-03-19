@@ -11,117 +11,72 @@ struct HistoryUIView: View {
     @State private var text = ""
     @State private var updatedContacts: [Contact] = []
     var body: some View {
-        NavigationView{
-            
-            VStack{
-                HStack(spacing: 15){
+        GeometryReader{geo in
+            NavigationView{
+                
+                VStack{
+                    HStack(spacing: 15){
+                        
+                        Image(systemName: "magnifyingglass")
+                            .font(.system(size: 23, weight: .bold))
+                            .foregroundColor(.gray)
+                        TextField("搜索最近通话", text: $text)
+                                                        
+                    }
+                 
+                    .padding(.vertical)
+                    .padding(.horizontal)
+                    .background(Color.primary.opacity(0.1))
+                    .frame(width: geo.size.width-10, height: 36.0)
+                    .cornerRadius(8)
+                    .onChange(of: text) { searchValue in
+                        updatedContacts = contacts.filter { $0.name.contains(searchValue)}
                     
-                    Image(systemName: "magnifyingglass")
-                        .font(.system(size: 23, weight: .bold))
-                        .foregroundColor(.gray)
-                    TextField("搜索最近通话", text: $text)
-                }
-                .padding(.vertical)
-                .padding(.horizontal)
-                .background(Color.primary.opacity(0.1))
-                .frame(width: 380, height: 36.0)
-                .cornerRadius(8)
-                .onChange(of: text) { searchValue in
-                    updatedContacts = contacts.filter { $0.name.contains(searchValue)}
-                }
-                
-                HStack{
-                    Rectangle()
-                        .fill(Color.gray.opacity(0.6))
-                        .frame(height: 0.5)
-                }
-                
-                
-                ScrollView(.vertical, showsIndicators: false, content:{
-                    VStack(spacing:15){
-                        ForEach(text == "" ? contacts : updatedContacts){
-                            contact in
-                            HStack (spacing:15){
-                                Image(systemName: "person.circle.fill")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .foregroundColor(Color.gray)
-                                    .padding(.leading)
-                                    .frame(width: 52.0, height: 52.0)
-                                
-                                VStack( alignment: .leading, spacing:8, content: {
-                                    HStack{
-                                        if(contact.type == "missed"){
-                                            Text(contact.name)
-                                                .foregroundColor(Color.red)
-                                        }else{
-                                            Text(contact.name)
-                                        }
-                                    }
-                                    
-                                    
-                                    HStack {
-                                        if(contact.type == "outgoing")
-                                        {
-                                            Image(systemName: "phone.arrow.up.right.fill")
-                                                .foregroundColor(Color.green)
-                                        }
-                                        else if(contact.type == "incoming")
-                                        {
-                                            Image(systemName: "phone.fill.arrow.down.left")
-                                                .foregroundColor(Color.gray)
-                                        }
-                                        else if(contact.type == "missed")
-                                        {
-                                            Image(systemName: "phone.fill.arrow.down.left")
-                                                .foregroundColor(Color.red)
-                                        }
-                                        Text(contact.time)
-                                            .font(.subheadline)
-                                            .foregroundColor(Color.gray)
-                                    }
-                                    
+                    }
+                    
+                    HStack{
+                        Rectangle()
+                            .fill(Color.gray.opacity(0.6))
+                            .frame(height: 0.5)
+                    }
+                    
+                    
+                    ScrollView(.vertical, showsIndicators: false, content:{
+                        VStack(spacing:0){
+                            ForEach(text == "" ? contacts : updatedContacts){
+                                contact in
+                                Button(action: goToHomeSecond, label: {
+                                    ContactsRow(name:contact.name, time:contact.time, type: contact.type)
+                                        .padding(.horizontal)
+                                        .padding(.vertical,5)
                                     
                                 })
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                
-                                Image(systemName: "info.circle.fill")
-                                    .resizable(resizingMode: .stretch)
-                                    .aspectRatio(contentMode: .fill)
-                                    .foregroundColor(Color.gray)
-                                
-                                    .padding(.trailing)
-                                    .frame(width: 24.0, height: 24.0)
-                                
                                 
                             }
-                            .padding(.horizontal)
-                        }
-                        
-                    }
-                    .toolbar{
-                        ToolbarItem(placement: .principal){
-                            Text("最近通话")
-                                .fontWeight(.semibold)
-                                .font(.title2)
                             
                         }
-                    }
-                    .navigationBarTitleDisplayMode(.inline)
-                    
-                    
-                })
+                        .toolbar{
+                            ToolbarItem(placement: .principal){
+                                Text("最近通话")
+                                    .fontWeight(.semibold)
+                                    .font(.title2)
+                            }
+                        }
+                        .navigationBarTitleDisplayMode(.inline)
+                        
+                        
+                    })
+                }
+                
+                
             }
             
             
-        }
-           
-          
             
             
         }
-        }
-    
+    }
+}
         
 
 
@@ -148,3 +103,12 @@ private var contacts = [
     Contact(name: "15860578441", time: "2023/1/09", type:"outgoing"),
     Contact(name: "18763937894", time: "2023/1/09", type:"missed"),
 ]
+                           
+func goToHomeSecond(){
+    if let window = UIApplication.shared.windows.first
+    {
+        window.rootViewController = UIHostingController(rootView: RecentCallContactUIView())
+        window.makeKeyAndVisible()
+    }
+}
+                           

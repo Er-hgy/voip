@@ -8,66 +8,93 @@
 import SwiftUI
 
 struct SettingsUIView: View {
+    struct NavagationItem:Identifiable,Hashable{
+        var id=UUID()
+        var title:String
+        var icon:String
+        var menu:Menu
+    }
+    var navigationItems=[
+        NavagationItem(title: "设置1", icon: "Vector",menu: .Setting1),
+        NavagationItem(title: "设置2", icon: "LVector", menu: .Setting2),
+    ]
+    enum Menu:String{
+        case Setting1
+        case Setting2
+    }
     var body: some View {
-        GeometryReader{geo in
-            VStack(spacing: 15) {
-                HStack{
-                    Text("设置")
-                        .fontWeight(.semibold)
-                        .font(.title2)
-                }
-                .padding(.top,0)
-                Divider()
-                ScrollView(){
-                    VStack(spacing: 8) {
-                        Text("账户").frame(maxWidth: .infinity,alignment: .leading)
-                            .font(.subheadline)
-                        
-                        HStack(spacing: 220) {
-                            Text("我的账户").frame(maxWidth: .infinity,alignment: .leading)
-                                .font(.title3)
-                            Image("Vector")
-                            
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: geo.size.width - 30, height: 51)
-                        .background(Color.white)
+        NavigationView{
+            NavigationStack{
+                /*VStack {
+                    Text("账户").frame(maxWidth: .infinity,alignment: .leading)
+                        .font(.subheadline)
+                    .padding(.leading,20)
+                    
+                }*/
+                   
+
+                List(navigationItems){item in
+                    NavigationLink(value:item){
+                        Label(item.title,systemImage:item.icon)
+                            .foregroundColor(.primary)
                     }
-                    .frame(width: 375, height: 80)
-                    VStack(spacing: 8) {
-                        Text("通知").frame(maxWidth: .infinity,alignment: .leading)
-                            .font(.subheadline)
-                        
-                        HStack(spacing: 220) {
-                            Text("设置1").frame(maxWidth: .infinity,alignment: .leading)
-                                .font(.title3)
-                            Image("Vector")
+                    .listStyle(.plain)
+                    .navigationDestination(for: NavagationItem.self){item in
+                        switch item.menu{
+                        case.Setting1:
+                            //setting1view()
+                            ContactUIView()
+                        case .Setting2:
+                            ContactUIView()
                         }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: geo.size.width - 30, height: 51)
-                        .background(Color.white)
-                        
-                        HStack(spacing: 220) {
-                            Text("设置2").frame(maxWidth: .infinity,alignment: .leading)
-                                .font(.title3)
-                            Image("Vector")
-                            
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 13)
-                        .frame(width: geo.size.width - 30, height: 51)
-                        .background(Color.white)
                     }
-                    .frame(width: geo.size.width - 30, height: 131)
-                    Spacer(minLength: 0)
                 }
+                .toolbar{
+                    ToolbarItem(placement: .principal){
+                        Text("设置")
+                            .fontWeight(.semibold)
+                            .font(.title2)
+                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .padding(.top, 0)
-            .padding(.bottom, 0)
-            .frame(width: geo.size.width, height: geo.size.height)
-            .background(Color(red: 0.97, green: 0.97, blue: 0.97))
+            /*GeometryReader{geo in
+                VStack(spacing: 15) {
+                        ScrollView(){
+                            Text("账户").frame(maxWidth: .infinity,alignment: .leading)
+                                .font(.subheadline)
+                                .padding(.leading,20)
+                            VStack(spacing: 35) {
+                                SettingRow(tittle:"我的账户")
+                            }
+                            .frame(width:geo.size.width - 30)
+                            Text("设置").frame(maxWidth: .infinity,alignment: .leading)
+                                .font(.subheadline)
+                                .padding(.leading)
+                                .padding(.top,30)
+                            VStack(spacing:35) {
+                                SettingRow(tittle:"设置1.0")
+                                SettingRow(tittle:"设置2.0")
+                                SettingRow(tittle:"设置2.0")
+                                SettingRow(tittle:"设置2.0")
+                            }
+                            .frame(width: geo.size.width - 30)
+                        }
+                        .toolbar{
+                            ToolbarItem(placement: .principal){
+                                Text("设置")
+                                    .fontWeight(.semibold)
+                                    .font(.title2)
+                                
+                            }
+                        }
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                .frame(width: geo.size.width, height: geo.size.height)
+                .background(Color(red: 0.97, green: 0.97, blue: 0.97))
+                .navigationBarTitle("设置",displayMode:.inline)
+                
+            }*/
         }
     }
 }
